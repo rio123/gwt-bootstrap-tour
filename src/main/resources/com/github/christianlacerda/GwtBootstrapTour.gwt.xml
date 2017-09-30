@@ -28,6 +28,6 @@
     <entry-point class='com.github.christianlacerda.client.GwtBootstrapTour'/>
 
     <source path="client"/>
-    <stylesheet src="bootstrap-tour-standalone.min.css"/>
+    <stylesheet src="bootstrap-tour.min.css"/>
 
 </module>

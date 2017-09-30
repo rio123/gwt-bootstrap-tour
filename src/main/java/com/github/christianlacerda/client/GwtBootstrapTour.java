@@ -31,22 +31,9 @@ public class GwtBootstrapTour implements EntryPoint {
 
     @Override
     public void onModuleLoad() {
-        if (!isjQueryLoaded()) {
-            ScriptInjector.fromString(Resources.INSTANCE.jQuery().getText())
-                    .setWindow(ScriptInjector.TOP_WINDOW)
-                    .inject();
-        }
         ScriptInjector.fromString(Resources.INSTANCE.bootstrapTour().getText())
                 .setWindow(ScriptInjector.TOP_WINDOW)
                 .inject();
     }
 
-    /**
-     * Check to see if jQuery is loaded already
-     *
-     * @return true is jQuery is loaded, false otherwise
-     */
-    private native boolean isjQueryLoaded() /*-{
-        return (typeof $wnd['jQuery'] !== 'undefined');
-    }-*/;
 }

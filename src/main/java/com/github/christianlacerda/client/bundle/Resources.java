@@ -31,9 +31,6 @@ public interface Resources extends ClientBundle {
 
     Resources INSTANCE = GWT.create(Resources.class);
 
-    @Source("jquery-1.11.1.min.js")
-    TextResource jQuery();
-
-    @Source("bootstrap-tour-standalone.min.js")
+    @Source("bootstrap-tour.min.js")
     TextResource bootstrapTour();
 }

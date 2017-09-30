@@ -33,7 +33,7 @@ public class Tour extends JavaScriptObject {
     }
 
     public static native Tour create()/*-{
-        return new $wnd.Tour();
+        return new $wnd.Tour({debug: true});
     }-*/;
 
     public static native Tour create(String nextLabel, String prevLabel, String endTourLabel, String pauseLabel, String resumeLabel)/*-{
